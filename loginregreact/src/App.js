@@ -1,9 +1,19 @@
-
+import Home from "./components/pages/Home";
+import Contact from "./components/pages/Contact"
+import Layout from "./components/pages/Layout";
+import {BrowserRouter,Routes,Route} from "react-router-dom";
 
 function App() {
   return (
     <>
-    <h1>Hello React</h1>
+    <BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Layout/>}>
+      <Route element={<Home/>}/>
+      <Route element={<Contact/>}/>
+      </Route>
+    </Routes>
+    </BrowserRouter>
     </>
   );
 }
