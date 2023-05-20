@@ -33,7 +33,7 @@ const Registration = () => {
                 console.log(actualData);
                 document.getElementById('registration-form').reset();
                 setError({status:true,msg:'Registration Succes', type:'success'})
-                // navigate('/');
+                navigate('/dashbord');
             }else{
                 setError({status:true,msg:'Password and Confirm Password doesnot match', type:'error'})              
             }
@@ -51,8 +51,8 @@ const Registration = () => {
     <Box component='form' noValidate sx={{mt:1}} id="registration-form" onSubmit={handleSubmit}>
         <TextField required margin='normal' fullWidth id='name' name='name' label='Name'/>
         <TextField required margin='normal' fullWidth id='email' name='email' label='Email Address'/>
-        <TextField required margin='normal' fullWidth id='pasword' name='password' label='Password'type='password'/>
-        <TextField required margin='normal' fullWidth id='pasword2' name='password2' label='Confirm Password'type='password'/>
+        <TextField required margin='normal' fullWidth id='password' name='password' label='Password'type='password'/>
+        <TextField required margin='normal' fullWidth id='password2' name='password2' label='Confirm Password'type='password'/>
     <FormControlLabel control={<Checkbox value="agree" color="primary" name="tc" id="tc"/>} label="I agree to term and Condition "/>
     <Box textAlign='center'>
         <Button type='submit' sx={{mt:3,mb:2,px:5}} variant='contained'>SignUp</Button>
