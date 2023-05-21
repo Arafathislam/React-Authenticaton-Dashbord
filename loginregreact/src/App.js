@@ -20,6 +20,8 @@ function App() {
       <Route path="reset" element={<ResetPassword/>}/>
       </Route>
       <Route path="/dashbord" element={<Dashbord/>}/>
+      <Route path="*" element={<h1>Error 404 page not found !!</h1>}/>
+
     </Routes>
     </BrowserRouter>
     </>
