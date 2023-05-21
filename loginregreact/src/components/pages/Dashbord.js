@@ -5,10 +5,11 @@ const Dashbord = () => {
     <>
     <CssBaseline/>
     <Grid>
-    <Grid item sm={4}>
+    <Grid item sm={4} sx={{backgroundColor:'gray' ,p:5,color:'white'}}>
 
     <Typography variant='h5'>Email:islamarafath315@gmail.com</Typography>
-    <Typography variant='h6'>Name:Arafath</Typography>
+    <Typography variant='h6'></Typography>
+    <Button>Logout</Button>
 
     </Grid>
 
